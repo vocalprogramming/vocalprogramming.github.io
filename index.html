@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vocal Programming</title>
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+
+  <body>
+
+    <div class="half-screen left">
+      <h1>Vocal Programming</h1>
+
+      <div class="instructions">
+        <p>Welcome to Vocal Programming. Vocal Programming is your personal code typist. All you have to do is speak out the code, and the app will write it for you!</p>
+        <p>Vocal Programming has certain syntax rules of it's own, and only responds to specific voice commands. Make sure you take a look at the 
+          <!-- <a href="./readme.html" target="_blank">readme</a> -->
+           document before you get started.</p>
+        <p>To start speaking code, hit the start button below...</p>
+      </div>
+
+      <div class="btn-container">
+          <button class="btn start" id="start_stop_button" onclick="startStopButton(event)">
+            Start
+          </button>
+          <button class="btn clear" id="clearButton" onclick="clearCode(event)">
+            Clear Code
+          </button>
+          <a class="btn readme" href='./readme.html' target="_blank">Readme</a>
+          <button class="btn" id="changeThemeButton" onClick="changeTheme(event)">
+            Change Theme
+          </button>
+      </div>
+
+      <div class="contributing">
+        <h2>Contributors</h2>
+        <!-- <p> Student Name</p> -->
+        <p>1DS18CS010 ADNAN RAHIM KHAN</p>
+        <p>1DS18CS037 CHARITH C SHETTY</p>
+        <p>1DS18CS041 DEEPAK C A</p>
+        <p>1DS18CS042 DEEPANSHU KUMAR PALI</p>
+
+        <h2>Guide: Mr.Abhinav RB</h2>
+      </div>
+    </div>
+
+
+    <div class="half-screen right full-height" id="text-editor-container">
+        <!-- Monaco Text Editor Here -->
+    </div>
+
+    <script src="js/voicerecog.js"></script>
+    <script src="js/functionCalls.js"></script>
+    <script src="js/buttonFunctions.js"></script>
+    <script src="js/utilFunctions.js"></script>
+    <script src="js/includeLibraries.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/iofunctions.js"></script>
+    <script src="js/ifelse.js"></script>
+    <script src = 'js/loops.js'></script>
+    <script src="js/braces.js"></script>
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+    <script src="js/monacoEditor.js"></script>
+
+  </body>
+</html>
